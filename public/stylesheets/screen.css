@@ -39,6 +39,11 @@ div#logo {
 	top: 6px;
 	left: 0;
 }
+div#logo p {
+	font-size: 0.9em;
+	padding-left: 4px;
+	margin: 4px 0 0 0;
+}
 div#search {
 	position: absolute;
 	top: 0;
