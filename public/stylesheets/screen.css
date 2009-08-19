@@ -1,0 +1,33 @@
+/**********************
+**
+** COMMAND C design
+** info at commandc dot com
+**
+***********************/
+
+/*****************
+* General
+******************/
+
+/*****************
+* Layout
+******************/
+div#container {
+	padding: 0;
+	text-align: left;
+	width: 880px;
+	margin: 0 auto;
+}
+div#header {
+	height: 90px;
+}
+div#content {
+	border: 1px solid #aeaeae;
+	padding: 40px 30px 25px 30px;
+	width: 820px;
+	min-height: 430px;
+}
+
+/*****************
+* Typography
+******************/

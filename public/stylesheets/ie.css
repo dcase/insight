@@ -1,3 +1,8 @@
+.page {
+	min-height: 430px;
+	height: auto !important;
+	height: 430px;
+}
 #modal #modal-content,
 #modal2 #modal-content2 {
 	height: 450px;

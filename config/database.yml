@@ -18,7 +18,7 @@ development:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: blockhead_development
+  database: insight_development
   pool: 5
   username: root
   password: root
@@ -31,7 +31,7 @@ test:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: blockhead_test
+  database: insight_test
   pool: 5
   username: root
   password:
@@ -41,7 +41,7 @@ production:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: blockhead_production
+  database: insight_production
   pool: 5
   username: root
   password: 
