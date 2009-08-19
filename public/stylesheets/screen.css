@@ -62,6 +62,16 @@ div#content {
 	width: 820px;
 	min-height: 430px;
 }
+div#footer {
+	text-align: center;
+	font-size: 0.83em;
+	color: #86898a;
+	padding: 6px 0;
+}
+div#footer a {
+	color: #86898a;
+	text-decoration: none;
+}
 
 /*****************
 * Typography
@@ -99,8 +109,7 @@ ul#mainmenu a:visited {
 }
 ul#mainmenu a:hover {
 	font-size: 1.17em;
-	font-weight: bold;
-	color: #515151;
+	color: rgb(140,213,243);
 	text-decoration: none;
 }
 ul#mainmenu a:active {
