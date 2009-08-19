@@ -5,6 +5,11 @@
 **
 ***********************/
 
+/******************
+Main Colors:
+blue: #0099FF
+
+
 /*****************
 * General
 ******************/
@@ -97,7 +102,7 @@ ul#mainmenu {
 ul#mainmenu li {
 	display: inline;
 	padding: 4px 8px;
-	border-left: 2px solid rgb(140,213,243);
+	border-left: 2px solid #0099FF;
 }
 ul#mainmenu li.first {
 	border-left: 0;
@@ -114,7 +119,7 @@ ul#mainmenu a:visited {
 }
 ul#mainmenu a:hover {
 	font-size: 1.17em;
-	color: rgb(140,213,243);
+	color: #0099FF;
 	text-decoration: none;
 }
 ul#mainmenu a:active {
