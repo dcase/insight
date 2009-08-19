@@ -10,16 +10,29 @@
 ******************/
 
 /*****************
+* SEO
+******************/
+#seo-heading1 {
+	display: none;
+}
+
+/*****************
 * Layout
 ******************/
 div#container {
 	padding: 0;
 	text-align: left;
 	width: 880px;
-	margin: 0 auto;
+	margin: 25px auto 15px auto;
 }
 div#header {
 	height: 90px;
+	position: relative;
+}
+div#navigation {
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 div#content {
 	border: 1px solid #aeaeae;
