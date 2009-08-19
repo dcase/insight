@@ -135,6 +135,7 @@ ul#mainmenu a.current:visited {
 }
 ul#mainmenu a.current:hover {
 	font-weight: bold;
+	color: #515151;
 }
 ul#mainmenu a.current:active {
 	font-weight: bold;
