@@ -8,6 +8,9 @@
 /*****************
 * General
 ******************/
+img, input {
+	vertical-align: middle;
+}
 
 /*****************
 * SEO
@@ -60,3 +63,14 @@ div#content {
 /*****************
 * Typography
 ******************/
+body {
+	color: #666;
+}
+
+/*****************
+* Search
+******************/
+div#search input#search {
+	border: 1px solid #7f7f7f;
+	padding: 1px;
+}
