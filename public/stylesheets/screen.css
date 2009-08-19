@@ -29,6 +29,22 @@ div#header {
 	height: 90px;
 	position: relative;
 }
+div#logo {
+	position: absolute;
+	top: 6px;
+	left: 0;
+}
+div#search {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#font-size-switcher {
+	float: none;
+	position: absolute;
+	top: 25px;
+	right: 25px;
+}
 div#navigation {
 	position: absolute;
 	bottom: 0;
