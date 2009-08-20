@@ -84,6 +84,9 @@ div#footer a {
 	color: #86898a;
 	text-decoration: none;
 }
+div.flash {
+	float: right;
+}
 
 /*****************
 * Typography
@@ -191,6 +194,38 @@ ul#mainmenu > li ul .child-hover {
 ul#mainmenu > li ul li ul {
 	margin: -29px 0 0 122px;
 	position: absolute;
+}
+
+/*****************
+* Page Menu
+******************/
+ul#pagemenu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ul#pagemenu > li > a {
+	font-size: 1.5em;
+	color: #666;
+	text-decoration: none;
+}
+ul#pagemenu > li > a.current {
+	font-size: 1.5em;
+	color: rgb(14,168,231);
+	text-decoration: none;
+}
+ul#pagemenu > li ul {
+	list-style: none;
+}
+ul#pagemenu > li ul a {
+	text-decoration: none;
+	color: #666;
+}
+ul#pagemenu > li ul a:hover {
+	color: rgb(14,168,231);
+}
+ul#pagemenu > li ul a.current {
+	color: rgb(14,168,231);
 }
 
 /*****************
