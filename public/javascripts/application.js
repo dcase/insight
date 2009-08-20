@@ -458,5 +458,27 @@ $(document).ready( function() {
 		});
 	});
 	
+	/******************************
+	*******************************
+	*****   CUSTOM SECTION   ******
+	*******************************
+	******************************/
+	
+	$("#mainmenu").livequery( function() {
+		$(this).dropDownMenu({
+			timer: 100,
+			childMO: "child-hover",
+			parentMO: "parent-hover"
+		});
+	});
+	
+	$(".heading.myriadpro").livequery( function(){
+		$(this).sifr({
+			build: 436,
+			version: 3,
+			font: "myriad_pro",
+			path: "/images/"
+		});
+	});
 		
 });

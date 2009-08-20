@@ -66,7 +66,7 @@ div#navigation {
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	padding-bottom: 10px;
+	padding-bottom: 6px;
 }
 div#content {
 	border: 1px solid #aeaeae;
@@ -92,7 +92,14 @@ body {
 	color: #666;
 	font-family: helvetica, arial, sans-serif;
 }
-
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+.heading {
+	font-size: 36px;
+	font-weight: normal;
+	color: rgb(14,168,231);
+}
 /*****************
 * Main Menu
 ******************/
@@ -100,47 +107,90 @@ ul#mainmenu {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	height: 23px;
 }
-ul#mainmenu li {
-	display: inline;
+ul#mainmenu > li {
+	float: left;
 	padding: 4px 8px;
 	border-left: 2px solid rgb(14,168,231);
+	position: relative;
 }
-ul#mainmenu li.first {
+ul#mainmenu > li.first {
 	border-left: 0;
 }
-ul#mainmenu a:link {
+ul#mainmenu > li > a {
+	display: block;
+}
+ul#mainmenu > li > a:link {
 	font-size: 1.17em;
 	color: #515151;
 	text-decoration: none;
 }
-ul#mainmenu a:visited {
+ul#mainmenu > li > a:visited {
 	font-size: 1.17em;
 	color: #515151;
 	text-decoration: none;
 }
-ul#mainmenu a:hover {
+ul#mainmenu > li > a:hover {
 	font-size: 1.17em;
 	color: rgb(14,168,231);
 	text-decoration: none;
 }
-ul#mainmenu a:active {
+ul#mainmenu > li > a:active {
 	font-size: 1.17em;
 	color: #515151;
 	text-decoration: none;
 }
-ul#mainmenu a.current:link {
+ul#mainmenu > li > a.current:link {
 	font-weight: bold;
 }
-ul#mainmenu a.current:visited {
+ul#mainmenu > li > a.current:visited {
 	font-weight: bold;
 }
-ul#mainmenu a.current:hover {
+ul#mainmenu > li > a.current:hover {
 	font-weight: bold;
 	color: #515151;
 }
-ul#mainmenu a.current:active {
+ul#mainmenu > li > a.current:active {
 	font-weight: bold;
+}
+
+/** Dropdowns **/
+ul#mainmenu > li ul {
+	display: none;
+	list-style: none;
+	position: absolute;
+	left: -4px;
+	top: 28px;
+	margin: -1px 0 0 0;
+	z-index: 90;
+	padding: 0;
+}
+
+ul#mainmenu > li ul a {
+	display: block;
+	width: 101px;
+	padding: 4px 4px 4px 15px;
+	border-bottom: 1px solid white;
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+	text-decoration: none;
+	font-size: 0.93em;
+	color: #515151;
+	background-color: #c5eeff;
+}
+
+ul#mainmenu > li ul li a.first {
+	border-top: 1px solid white;
+}
+
+ul#mainmenu > li ul .child-hover {
+	color: rgb(14,168,231);
+}
+
+ul#mainmenu > li ul li ul {
+	margin: -29px 0 0 122px;
+	position: absolute;
 }
 
 /*****************
