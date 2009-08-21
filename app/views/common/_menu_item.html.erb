@@ -10,6 +10,7 @@
 		<% if item.published and !authorized? %>
 			<%= link_to item.short_name, item, :class => ( item == @section || item.ancestors.include?(@section) ? " current" : " notcurrent" ) %>
 		<% elsif authorized? %>
+			<% debugger %>
 			<%= link_to item.short_name, item, :class => ( item == @section || item.ancestors.include?(@section) ? " current" : " notcurrent" ) + " " + ( item.published ? "published" : "unpublished" ) %>
 		<% end %>
 		<% unless item.children.blank? and item.pages.blank? %>
