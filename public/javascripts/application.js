@@ -468,7 +468,7 @@ $(document).ready( function() {
 	
 	
 	// Focus on login form
-	$("#new_user_session input:first").focus();
+	$("#new_user_session input[type=text]:first").focus();
 	
 
 	
