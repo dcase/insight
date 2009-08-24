@@ -470,8 +470,6 @@ $(document).ready( function() {
 	// Focus on login form
 	$("#new_user_session input[type=text]:first").focus();
 	
-
-	
 	/******************************
 	*******************************
 	*****   CUSTOM SECTION   ******
@@ -485,6 +483,7 @@ $(document).ready( function() {
 			parentMO: "parent-hover"
 		});
 	});
+
 	
 	$(".heading.myriadpro").livequery( function(){
 		$(this).sifr({
