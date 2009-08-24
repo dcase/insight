@@ -260,3 +260,12 @@ div#search input#search {
 .home #learn_more {
 	margin-top: 25px;
 }
+
+/*****************
+* About Us
+******************/
+
+/* Our Firm */
+.about-us #content {
+	padding-top: 65px;
+}
