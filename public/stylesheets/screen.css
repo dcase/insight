@@ -98,7 +98,7 @@ div.flash {
 	right: 10px;
 }
 .has-sidebar #main {
-	margin-left: 275px;
+	margin-left: 245px;
 }
 
 /*****************
@@ -290,5 +290,6 @@ div#search input#search {
 
 /* Our Firm */
 .about-us #content {
-	padding: 65px 65px ;
+	padding: 65px 65px 25px 30px;
+	background: transparent url(/images/about-firm-background.jpg) no-repeat 0 0;
 }
