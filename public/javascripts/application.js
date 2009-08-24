@@ -509,9 +509,9 @@ $(document).ready( function() {
 		});
 	});
 	
-	$(".block").livequery(function() {
+	/*$(".block").livequery(function() {
 		$(this).addClass("autoscroll");
-	});
+	});*/
 
 		
 });

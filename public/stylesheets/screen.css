@@ -81,6 +81,7 @@ div#content {
 div#sidebar {
 	float: left;
 	width: 240px;
+	padding-top: 30px;
 }
 .has-sidebar #main {
 	margin-left: 245px;
@@ -296,10 +297,18 @@ div#search input#search {
 
 /* Our Firm */
 .about-us #content {
-	padding: 65px 65px 25px 30px;
+	padding: 40px 65px 25px 30px;
 	background: transparent url(/images/about-firm-background.jpg) no-repeat 0 0;
+}
+.about-us #main {
+	padding-top: 15px;
 }
 .about-us .highlights ul {
 	padding: 0;
 	list-style-position: inside;
+}
+
+/* Our Culture */
+.about-us.our-culture.diverse #main {
+	padding-top: 0;
 }
