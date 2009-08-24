@@ -73,6 +73,14 @@ div#content {
 	padding: 40px 30px 25px 30px;
 	/*width: 820px;*/
 	min-height: 430px;
+	position: relative;
+}
+div#sidebar {
+	float: left;
+	width: 240px;
+}
+.has-sidebar #main {
+	margin-left: 245px;
 }
 div#footer {
 	text-align: center;
@@ -85,7 +93,12 @@ div#footer a {
 	text-decoration: none;
 }
 div.flash {
-	float: right;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.has-sidebar #main {
+	margin-left: 275px;
 }
 
 /*****************
@@ -103,8 +116,11 @@ h1,h2,h3,h4,h5,h6 {
 	font-size: 36px;
 	font-weight: normal;
 	color: rgb(14,168,231);
+}
+.admin-mode .heading {
 	margin-top: 10px;
 }
+
 /*****************
 * Main Menu
 ******************/
@@ -206,6 +222,9 @@ ul#pagemenu {
 	margin: 0;
 	padding: 0;
 }
+ul#pagemenu > li {
+	margin-bottom: 5px;
+}
 ul#pagemenu > li > a {
 	font-size: 1.5em;
 	color: #666;
@@ -218,6 +237,7 @@ ul#pagemenu > li > a.current {
 }
 ul#pagemenu > li ul {
 	list-style: none;
+	margin-top: 5px;
 }
 ul#pagemenu > li ul a {
 	text-decoration: none;
@@ -260,6 +280,9 @@ div#search input#search {
 .home #learn_more {
 	margin-top: 25px;
 }
+.home #block_1 {
+	height: 290px;
+}
 
 /*****************
 * About Us
@@ -267,5 +290,5 @@ div#search input#search {
 
 /* Our Firm */
 .about-us #content {
-	padding-top: 65px;
+	padding: 65px 65px ;
 }
