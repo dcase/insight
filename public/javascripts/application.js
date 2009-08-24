@@ -485,7 +485,7 @@ $(document).ready( function() {
 	});
 
 	
-	$(".heading.myriadpro").livequery( function(){
+	$(".myriadpro").livequery( function(){
 		$(this).sifr({
 			build: 436,
 			version: 3,
@@ -493,6 +493,7 @@ $(document).ready( function() {
 			path: "/images/"
 		});
 	});
+	
 	$("ul#pagemenu > li > a").livequery( function(){
 		$(this).sifr({
 			build: 436,

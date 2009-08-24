@@ -71,7 +71,7 @@ div#navigation {
 div#content {
 	border: 1px solid #aeaeae;
 	padding: 40px 30px 25px 30px;
-	width: 820px;
+	/*width: 820px;*/
 	min-height: 430px;
 }
 div#footer {
@@ -94,6 +94,7 @@ div.flash {
 body {
 	color: #666;
 	font-family: helvetica, arial, sans-serif;
+	line-height: 133%;
 }
 h1,h2,h3,h4,h5,h6 {
 	margin: 0;
@@ -102,6 +103,7 @@ h1,h2,h3,h4,h5,h6 {
 	font-size: 36px;
 	font-weight: normal;
 	color: rgb(14,168,231);
+	margin-top: 10px;
 }
 /*****************
 * Main Menu
@@ -234,4 +236,27 @@ ul#pagemenu > li ul a.current {
 div#search input#search {
 	border: 1px solid #7f7f7f;
 	padding: 1px;
+}
+
+
+/******************************
+*******************************
+*****  Page Specific Styles
+*******************************
+*******************************/
+
+/*****************
+* Home
+******************/
+
+.home #content {
+	padding: 40px 390px 25px 70px;
+	background: transparent url(/images/home-background.jpg) no-repeat 100% 120px;
+}
+.home .heading {
+	font-size: 59px;
+	margin-bottom: 40px;
+}
+.home #learn_more {
+	margin-top: 25px;
 }
