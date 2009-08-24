@@ -508,6 +508,10 @@ $(document).ready( function() {
 			window.location.href = $(this).parents('a:first').attr('href');
 		});
 	});
+	
+	$(".block").livequery(function() {
+		$(this).addClass("autoscroll");
+	});
 
 		
 });

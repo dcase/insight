@@ -24,7 +24,7 @@
 			<% end %>
 		</ul>
 	<% elsif block.display_title %>
-		<h4><%= block.long_name %></h4>
+		<h4 class="myriadpro"><%= block.long_name %></h4>
 	<% end %>
 
 	<%= render :partial => "blocks/content", :collection => block.contents, :as => :content, :locals => { :parent_block => block } %>

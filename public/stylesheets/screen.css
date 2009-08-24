@@ -18,6 +18,9 @@ blue: rgb(14,168,231)
 img, input {
 	vertical-align: middle;
 }
+#gray-line img {
+	margin-top: 15px;
+}
 
 /*****************
 * SEO
@@ -119,6 +122,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 .admin-mode .heading {
 	margin-top: 10px;
+}
+.block h4 {
+	color: rgb(14,168,231);
+	font-size: 16px;
+	padding-left: 13px;
+	background: transparent url(/images/gray-right-arrow.png) no-repeat 0 2px;
 }
 
 /*****************
@@ -280,9 +289,6 @@ div#search input#search {
 .home #learn_more {
 	margin-top: 25px;
 }
-.home #block_1 {
-	height: 290px;
-}
 
 /*****************
 * About Us
@@ -292,4 +298,8 @@ div#search input#search {
 .about-us #content {
 	padding: 65px 65px 25px 30px;
 	background: transparent url(/images/about-firm-background.jpg) no-repeat 0 0;
+}
+.about-us .highlights ul {
+	padding: 0;
+	list-style-position: inside;
 }
