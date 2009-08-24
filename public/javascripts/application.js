@@ -466,6 +466,10 @@ $(document).ready( function() {
 		});
 	});
 	
+	
+	// Focus on login form
+	$("#new_user_session input:first").focus();
+	
 
 	
 	/******************************
@@ -504,5 +508,6 @@ $(document).ready( function() {
 			window.location.href = $(this).parents('a:first').attr('href');
 		});
 	});
+
 		
 });
