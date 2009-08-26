@@ -351,3 +351,7 @@ div#search input#search {
 .about-us .quote_credit {
 	text-align: right;
 }
+.about-us .quote_list {
+	list-style-position: inside;
+	padding: 0;
+}
