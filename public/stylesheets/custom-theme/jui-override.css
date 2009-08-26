@@ -1,0 +1,51 @@
+/* Component containers
+----------------------------------*/
+
+.ui-widget-header { 
+	border: 0; 
+	background: transparent; 
+	color: #222222; 
+	font-weight: bold; 
+}
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default, .ui-widget-content .ui-state-default { border: 1px solid #d3d3d3; background: #e6e6e6 url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #555555; outline: none; }
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { 
+	color: rgb(14,168,231); 
+	text-decoration: none; 
+	outline: none; 
+	}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus { border: 1px solid #999999; background: #dadada url(images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #212121; outline: none; }
+.ui-state-hover a, .ui-state-hover a:hover { 
+	color: rgb(14,168,231); 
+	text-decoration: none; 
+	outline: none; 
+	}
+.ui-state-active, .ui-widget-content .ui-state-active { 
+	border: 1px solid #eaeaea;
+	background: #ffffff url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x; 
+	font-weight: normal; 
+	color: rgb(14,168,231); 
+	outline: none; 
+	}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { 
+	color: rgb(14,168,231); 
+	outline: none; 
+	text-decoration: none; 
+	}
+
+/** Leave modal tabs alone **/
+
+#container .ui-tabs .ui-tabs-panel { 
+	padding: 1em 1.4em; 
+	display: block; 
+	border: 1px solid #eaeaea; 
+	background: none; 
+}
+#container .ui-tabs .ui-tabs-nav {
+	font-size: 15px;
+}
+#container .ui-tabs .ui-tabs-panel {
+	font-size: 11px;
+}
