@@ -127,6 +127,7 @@ h1,h2,h3,h4,h5,h6 {
 .block h4 {
 	color: rgb(14,168,231);
 	font-size: 16px;
+	font-weight: normal;
 	padding-left: 13px;
 	background: transparent url(/images/gray-right-arrow.png) no-repeat 0 2px;
 }
@@ -309,7 +310,8 @@ div#search input#search {
 }
 
 /* Our Culture */
-.about-us.our-culture.diverse #main {
+.about-us.our-culture.diverse #main,
+.about-us.our-culture.collaborative #main {
 	padding-top: 0;
 }
 .about-us #academic {
@@ -345,4 +347,7 @@ div#search input#search {
 }
 .about-us #academic .gray {
 	background: #898989;
+}
+.about-us .quote_credit {
+	text-align: right;
 }
