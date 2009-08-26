@@ -394,7 +394,7 @@ $(document).ready( function() {
 	$.fn.checkScrolls = function() {
 		this.each( function() {
 			if ($('> .scroll-pane', this).length == 0) {
-				$('*',this).not(".admin-links, .scroll-buttons").wrapAll("<div class=\"scroll-pane\"></div>").wrapAll("<div class=\"scroll-content\"></div>");
+				$('> *',this).not(".admin-links, .scroll-buttons").wrapAll("<div class=\"scroll-pane\"></div>").wrapAll("<div class=\"scroll-content\"></div>");
 			}
 		
 			pane = $('> .scroll-pane', this);

@@ -289,7 +289,6 @@ div.pagination {
 ******************/
 
 .autoscroll .scroll-pane {
-	padding-top: 20px;
 	overflow: hidden;
 }
 .scroll-pane { 
