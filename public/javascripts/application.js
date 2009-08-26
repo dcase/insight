@@ -483,6 +483,10 @@ $(document).ready( function() {
 			parentMO: "parent-hover"
 		});
 	});
+	
+	/*************************
+	** sIFR stuff
+	**************************/
 
 	
 	$(".myriadpro").livequery( function(){
@@ -509,9 +513,26 @@ $(document).ready( function() {
 		});
 	});
 	
-	/*$(".block").livequery(function() {
-		$(this).addClass("autoscroll");
-	});*/
+	/*************************
+	** Page specific stuff
+	**************************/
+	
+	/** About Us > Our Culture > Diverse **/
+	$("#academic td").livequery( function() {
+		$(this).hover( 
+			function() {
+				$(this).addClass("gray");
+				$(".view1", this).hide();
+				$(".view2", this).show();
+			},
+			function() {
+				$(this).removeClass("gray");
+				$(".view2", this).hide();
+				$(".view1", this).show();
+			});
+	});
+	
+
 
 		
 });

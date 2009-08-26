@@ -312,3 +312,37 @@ div#search input#search {
 .about-us.our-culture.diverse #main {
 	padding-top: 0;
 }
+.about-us #academic {
+	width: 472px;
+	margin: 0 auto;
+}
+.about-us #academic {
+	color: white;
+}
+.about-us #academic p {
+	margin: 0;
+}
+.about-us #academic td {
+	vertical-align: middle;
+	width: 203px;
+	height: 115px;
+	padding: 15px 15px 5px 15px;
+}
+.about-us #academic .view1 {
+	font-size: 1.17em;
+	text-align: center;
+	text-transform: uppercase;
+}
+.about-us #academic .view2 {
+	background: #898989;
+	text-align: left;
+}
+.about-us #academic .dark-blue {
+	background: rgb(74,190,237);
+}
+.about-us #academic .light-blue {
+	background: rgb(171,225,247);
+}
+.about-us #academic .gray {
+	background: #898989;
+}
