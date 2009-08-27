@@ -60,5 +60,4 @@ module ApplicationHelper
     return output
   end
         
-        
 end
