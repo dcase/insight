@@ -48,6 +48,9 @@ $(document).ready( function() {
 		);
 	});
 	
+	// Fade the alerts so they're not so distracting
+	$("#alert").fadeTo("slow", 0.5);
+	
 	// Setup modals
 	
 	$('body').append('<div id="modal"><img id="modal-close" src="/images/modal_button_close.png" width="30" height="30" alt="Close Window" /><div id="modal-content"></div></div>');
