@@ -281,15 +281,15 @@ div#search input#search {
 * Home
 ******************/
 
-.home #content {
+.section_1 #content {
 	padding: 40px 390px 25px 70px;
 	background: transparent url(/images/home-background.jpg) no-repeat 100% 120px;
 }
-.home .heading {
+.section_1 .heading {
 	font-size: 59px;
 	margin-bottom: 40px;
 }
-.home #learn_more {
+.section_1 #learn_more {
 	margin-top: 25px;
 }
 
@@ -298,64 +298,113 @@ div#search input#search {
 ******************/
 
 /* Our Firm */
-.about-us #content {
+.root_section_2 #content {
 	padding: 40px 65px 25px 30px;
 	background: transparent url(/images/about-firm-background.jpg) no-repeat 0 0;
 }
-.about-us #main {
+.root_section_2 #main {
 	padding-top: 15px;
 }
-.about-us .highlights ul {
+.root_section_2 .highlights ul {
 	padding: 0;
 	list-style-position: inside;
 }
 
 /* Our Culture */
-.about-us.our-culture.diverse #main,
-.about-us.our-culture.collaborative #main {
+.page_3 #main,
+.page_4 #main {
 	padding-top: 0;
 }
-.about-us #academic {
+.root_section_2 #academic {
 	width: 472px;
 	margin: 0 auto;
 }
-.about-us #academic {
+.root_section_2 #academic {
 	color: white;
 }
-.about-us #academic p {
+.root_section_2 #academic p {
 	margin: 0;
 }
-.about-us #academic td {
+.root_section_2 #academic td {
 	vertical-align: middle;
 	width: 203px;
 	height: 115px;
 	padding: 15px 15px 5px 15px;
 }
-.about-us #academic .view1 {
+.root_section_2 #academic .view1 {
 	font-size: 1.17em;
 	text-align: center;
 	text-transform: uppercase;
 }
-.about-us #academic .view2 {
+.root_section_2 #academic .view2 {
 	background: #898989;
 	text-align: left;
 }
-.about-us #academic .dark-blue {
+.root_section_2 #academic .dark-blue {
 	background: rgb(74,190,237);
 }
-.about-us #academic .light-blue {
+.root_section_2 #academic .light-blue {
 	background: rgb(171,225,247);
 }
-.about-us #academic .gray {
+.root_section_2 #academic .gray {
 	background: #898989;
 }
-.about-us .quote_credit {
+.root_section_2 .quote_credit {
 	text-align: right;
 }
-.about-us .quote_list {
+.root_section_2 .quote_list {
 	list-style-position: inside;
 	padding: 0;
 }
-.about-us .content.bio {
+.root_section_2 .bio {
 	height: 345px;
 }
+
+/*****************
+* Services
+******************/
+
+/** Industry Focus **/
+.section_10 #content {
+	background: transparent url(/images/industry-focus-background.jpg) no-repeat 0 100%;
+}
+
+/** Capabilities **/
+
+	/** Product Commercialization Strategy **/
+	.page_9 #content {
+		background: transparent url(/images/capabilities-prodcommstrat-background.jpg) no-repeat 0 100%;
+	}
+	/** Oncology and Specialty Therapeutics **/
+	.page_10 #content {
+		background: transparent url(/images/capabilities-oncspecther-background.jpg) no-repeat 0 100%;
+	}
+	/** US Managed Markets **/
+	.page_11 #content {
+		background: transparent url(/images/capabilities-usmngdmrkts-background.jpg) no-repeat 0 100%;
+	}
+	/** Global Market Access **/
+	.page_12 #content {
+		background: transparent url(/images/capabilities-glblmrktaccess-background.jpg) no-repeat 0 100%;
+	}
+	
+/** Case Studies **/
+
+	/** Product Commercialization Strategy **/
+	.page_13 #content {
+		background: transparent url(/images/casestudies-prodcommstrat-background.jpg) no-repeat 0 100%;
+	}
+	/** Oncology and Specialty Therapeutics **/
+	.page_14 #content {
+		background: transparent url(/images/casestudies-oncspecther-background.jpg) no-repeat 0 0;
+	}
+	/** US Managed Markets **/
+	.page_15 #content {
+		background: transparent url(/images/casestudies-usmngdmrkts-background.jpg) no-repeat 0 100%;
+	}
+	/** Global Market Access **/
+	.page_16 #content {
+		background: transparent url(/images/casestudies-glblmrktaccess-background.jpg) no-repeat 0 100%;
+	}
+	
+
