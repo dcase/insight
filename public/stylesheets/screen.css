@@ -460,6 +460,7 @@ div#search input#search {
 }
 .sitemap #sitemap-wrapper {
 	height: 345px;
+	position: relative;
 }
 .sitemap ul#sitemap {
 	list-style: none;
