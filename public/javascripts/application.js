@@ -442,7 +442,7 @@ $(document).ready( function() {
 		});
 	}
 	
-	$('.block.autoscroll,.content.autoscroll').livequery( function() {
+	$('.autoscroll').livequery( function() {
 		$(this).checkScrolls();
 	});
 	
