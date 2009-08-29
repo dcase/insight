@@ -131,6 +131,45 @@ h1,h2,h3,h4,h5,h6 {
 	padding-left: 13px;
 	background: transparent url(/images/gray-right-arrow.png) no-repeat 0 2px;
 }
+div#search, #font-size-switcher {
+	color: #999;
+}
+
+/*****************
+* Hyperlinks
+******************/
+a:link {
+	color: #999;
+	text-decoration: none;
+}
+a:visited {
+	color: #999;
+	text-decoration: none;
+}
+a:hover {
+	color: rgb(14,168,231);
+	text-decoration: underline;
+}
+a:active {
+	color: #999;
+	text-decoration: none;
+}
+a.current:link {
+	color: rgb(14,168,231);
+	text-decoration: underline;
+}
+a.current:visited {
+	color: rgb(14,168,231);
+	text-decoration: underline;
+}
+a.current:hover {
+	color: rgb(14,168,231);
+	text-decoration: underline;
+}
+a.current:active {
+	color: rgb(14,168,231);
+	text-decoration: underline;
+}
 
 /*****************
 * Main Menu
@@ -268,6 +307,7 @@ ul#pagemenu > li ul a.current {
 div#search input#search {
 	border: 1px solid #7f7f7f;
 	padding: 1px;
+	margin-left: 3px;
 }
 
 
@@ -284,6 +324,10 @@ div#search input#search {
 .section_1 #content {
 	padding: 40px 390px 25px 70px;
 	background: transparent url(/images/home-background.jpg) no-repeat 100% 120px;
+}
+.section_1 h4 {
+	background: transparent;
+	padding: 0;
 }
 .section_1 .heading {
 	font-size: 59px;
@@ -407,4 +451,24 @@ div#search input#search {
 		background: transparent url(/images/casestudies-glblmrktaccess-background.jpg) no-repeat 0 100%;
 	}
 	
+/*****************
+* Sitemap
+******************/
+.sitemap #content {
+	background: transparent url(/images/sitemap-background.jpg) no-repeat 0 100%;
+	padding-left: 255px;
+}
+.sitemap ul#sitemap {
+	list-style: none;
+	padding-left: 160px;
+	margin-top: 45px;
+}
+.sitemap ul#sitemap ul {
+	list-style: none;
+}
+.sitemap ul#sitemap a {
+	font-weight: bold;
+	color: rgb(14,168,231);
+	text-decoration: underline;
+}
 
