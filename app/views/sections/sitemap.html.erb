@@ -5,11 +5,13 @@
 
 <h3 class="heading myriadpro">Sitemap.</h3>
 
-<ul id="sitemap">
-	<%= render :partial => "common/menu_item", :collection => get_menu_sections, :as => :item, 
-		:locals => { 
-				:show_pages => true, 
-				:is_page => false, 
-				:show_all_pages => true
-			 } %>
-</ul>
+<div id="sitemap-wrapper" class="content autoscroll">
+	<ul id="sitemap">
+		<%= render :partial => "common/menu_item", :collection => get_menu_sections, :as => :item, 
+			:locals => { 
+					:show_pages => true, 
+					:is_page => false, 
+					:show_all_pages => true
+				 } %>
+	</ul>
+</div>

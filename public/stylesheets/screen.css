@@ -458,6 +458,9 @@ div#search input#search {
 	background: transparent url(/images/sitemap-background.jpg) no-repeat 0 100%;
 	padding-left: 255px;
 }
+.sitemap #sitemap-wrapper {
+	height: 345px;
+}
 .sitemap ul#sitemap {
 	list-style: none;
 	padding-left: 160px;
