@@ -519,6 +519,16 @@ $(document).ready( function() {
 		});
 	});
 	
+	$(".myriadpro-fit").livequery( function(){
+		$(this).sifr({
+			build: 436,
+			version: 3,
+			font: "myriad_pro",
+			path: "/images/",
+			fitExactly: true
+		});
+	});
+	
 	$("ul#pagemenu > li > a").livequery( function(){
 		$(this).sifr({
 			build: 436,
