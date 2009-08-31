@@ -94,7 +94,7 @@ div.sidebar-right {
 	width: 170px;
 	padding: 30px 0 0 20px;
 }
-.has-sidebar-right #main {
+.has-sidebar-right {
 	margin-right: 193px;
 }
 div#footer {
@@ -459,6 +459,19 @@ div#search input#search {
 		background: transparent url(/images/casestudies-glblmrktaccess-background.jpg) no-repeat 0 100%;
 	}
 	
+/*****************
+* News
+******************/
+ul.feed {
+	padding: 0;
+	list-style-position: inside;
+}
+ul.feed li {
+	margin-bottom: 20px;
+}
+ul.feed li a {
+	text-decoration: underline;
+}
 /*****************
 * Contact
 ******************/
