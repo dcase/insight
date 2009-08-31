@@ -464,7 +464,9 @@ div#search input#search {
 }
 .contact-heading {
 	font-size: 20px;
+	font-weight: normal;
 	color: rgb(14,168,231);
+	margin-bottom: 25px;
 }
 	
 /*****************
