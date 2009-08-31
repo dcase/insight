@@ -1,0 +1,14 @@
+<h1>Editing alumni_profile</h1>
+
+<% form_for(@alumni_profile) do |f| %>
+  <%= f.error_messages %>
+
+  <%= render :partial => f %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @alumni_profile %> |
+<%= link_to 'Back', alumni_profiles_path %>

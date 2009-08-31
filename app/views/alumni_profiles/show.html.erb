@@ -1,0 +1,33 @@
+<p>
+  <b>Name:</b>
+  <%=h @alumni_profile.name %>
+</p>
+
+<p>
+  <b>Isa job:</b>
+  <%=h @alumni_profile.isa_job %>
+</p>
+
+<p>
+  <b>Current job:</b>
+  <%=h @alumni_profile.current_job %>
+</p>
+
+<p>
+  <b>Education:</b>
+  <%=h @alumni_profile.education %>
+</p>
+
+<p>
+  <b>Questions:</b>
+  <%=h @alumni_profile.questions %>
+</p>
+
+<p>
+  <b>Quotation:</b>
+  <%=h @alumni_profile.quotation %>
+</p>
+
+
+<%= link_to 'Edit', edit_alumni_profile_path(@alumni_profile) %> |
+<%= link_to 'Back', alumni_profiles_path %>

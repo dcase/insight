@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  isa_job: MyString
+  current_job: MyString
+  education: MyString
+  questions: MyText
+  quotation: MyText
+
+two:
+  name: MyString
+  isa_job: MyString
+  current_job: MyString
+  education: MyString
+  questions: MyText
+  quotation: MyText

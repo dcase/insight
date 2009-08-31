@@ -1,0 +1,30 @@
+<h1>Listing alumni_profiles</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Isa job</th>
+    <th>Current job</th>
+    <th>Education</th>
+    <th>Questions</th>
+    <th>Quotation</th>
+  </tr>
+
+<% @alumni_profiles.each do |alumni_profile| %>
+  <tr>
+    <td><%=h alumni_profile.name %></td>
+    <td><%=h alumni_profile.isa_job %></td>
+    <td><%=h alumni_profile.current_job %></td>
+    <td><%=h alumni_profile.education %></td>
+    <td><%=h alumni_profile.questions %></td>
+    <td><%=h alumni_profile.quotation %></td>
+    <td><%= link_to 'Show', alumni_profile %></td>
+    <td><%= link_to 'Edit', edit_alumni_profile_path(alumni_profile) %></td>
+    <td><%= link_to 'Destroy', alumni_profile, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New alumni_profile', new_alumni_profile_path %>

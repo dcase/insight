@@ -1,0 +1,24 @@
+<p>
+    <%= form.label :name, "Alumnus Name:" %><br />
+    <%= form.text_field :name %>
+  </p>
+  <p>
+    <%= form.label :isa_job, "Role at ISA:" %><br />
+    <%= form.text_field :isa_job %>
+  </p>
+  <p>
+    <%= form.label :current_job, "Now:" %><br />
+    <%= form.text_field :current_job %>
+  </p>
+  <p>
+    <%= form.label :education, "Education:" %><br />
+    <%= form.text_field :education %>
+  </p>
+  <p>
+    <%= form.label :questions, "Questions and Answers (uses <a href=\"http://www.textism.com/tools/textile/\" target=\"_blank\">Textile</a>):" %><br />
+    <%= form.text_area :questions, :rows => 5 %>
+  </p>
+  <p>
+    <%= form.label :quotation, "Quotation:" %><br />
+    <%= form.text_area :quotation, :rows => 3 %>
+  </p>

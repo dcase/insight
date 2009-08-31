@@ -472,6 +472,38 @@ ul.feed li {
 ul.feed li a {
 	text-decoration: underline;
 }
+
+/*****************
+* News
+******************/
+.alumni-profile-quotation {
+	font-style: italic;
+	margin-bottom: 25px;
+}
+.alumni-profile-info {
+	float: left;
+	width: 190px;
+}
+.alumni-profile-info h4 {
+	color: rgb(14,168,231);
+	font-size: 1.33em;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+}
+.alumni-profile-info h5 {
+	margin: 20px 0 0 0;
+	font-size: 1em;
+}
+.alumni-profile-info h5.first {
+	margin: 0;
+}
+.alumni-profile-info p {
+	margin: 0;
+}
+.alumni-profile-questions {
+	margin-left: 193px;
+}
 /*****************
 * Contact
 ******************/

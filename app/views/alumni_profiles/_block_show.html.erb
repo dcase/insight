@@ -1,0 +1,16 @@
+<div class="alumni-profile-quotation">
+	<p>&ldquo;<%= alumni_profile.quotation %>&rdquo;</p>
+</div>
+<div class="alumni-profile-info">
+	<h4><%= alumni_profile.name %></h4>
+	<h5 class="first">Role at ISA:</h5>
+	<p><%= alumni_profile.isa_job %><p>
+	<h5>Now:</h5>
+	<p><%= alumni_profile.current_job %></p>
+	<h5>Education:</h5>
+	<p><%= alumni_profile.education %></p>
+</div>
+<div class="alumni-profile-questions">
+	<%= textilize(alumni_profile.questions) %>
+</div>
+	
