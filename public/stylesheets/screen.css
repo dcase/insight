@@ -453,6 +453,21 @@ div#search input#search {
 	}
 	
 /*****************
+* Contact
+******************/
+.contact-map {
+	float: left;
+}
+.contact-info {
+	margin-left: 330px;
+	padding-top: 135px;
+}
+.contact-heading {
+	font-size: 20px;
+	color: rgb(14,168,231);
+}
+	
+/*****************
 * Sitemap
 ******************/
 .sitemap #content {
