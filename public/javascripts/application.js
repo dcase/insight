@@ -119,7 +119,7 @@ $(document).ready( function() {
 		}
 		if ( $(this).attr('enctype') == "multipart/form-data") {
 			if ($('#ajax-target').length == 0 ) {
-				$('body').append('<iframe id="ajax-target" name="ajax-target"></iframe>');
+				$('body').append('<iframe id="ajax-target" name="ajax-target" style="display:none;"></iframe>');
 			}
 			$(this).attr({'target':'ajax-target','action':$(this).attr('action') + '.js'});
 		} else {
