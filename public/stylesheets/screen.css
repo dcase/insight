@@ -460,11 +460,12 @@ div#search input#search {
 }
 .contact-info {
 	margin-left: 330px;
-	padding-top: 135px;
+	padding: 135px 0 0 25px;
 }
 .contact-heading {
 	font-size: 20px;
 	font-weight: normal;
+	line-height: 133%;
 	color: rgb(14,168,231);
 	padding: 0;
 	margin: 0;
