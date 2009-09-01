@@ -6,8 +6,11 @@ What type of content do you want to add?<br />
 	"Quote List" => "quote_lists",
 	"Alumni Profile" => "alumni_profiles"
 	 }
+
 if authorized?(:admin)
-	admin_options = {}
+	admin_options = {
+		"Rails Partial" => "partials"
+	}
 	options.merge!(admin_options)
 end
 %>

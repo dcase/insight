@@ -1,5 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+
   map.resources :alumni_profiles
+
+  map.resources :partials
 
   map.resources :quotes
 
