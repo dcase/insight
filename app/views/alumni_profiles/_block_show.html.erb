@@ -1,14 +1,25 @@
 <div class="alumni-profile-quotation">
-	<p>&ldquo;<%= alumni_profile.quotation %>&rdquo;</p>
+	<%  %>
+		<p>
+			<% unless alumni_profile.quotation.blank? %>
+				&ldquo;<%= alumni_profile.quotation %>&rdquo;
+			<% end %>
+		</p>
 </div>
 <div class="alumni-profile-info">
 	<h4><%= alumni_profile.name %></h4>
-	<h5 class="first">Role at ISA:</h5>
-	<p><%= alumni_profile.isa_job %><p>
-	<h5>Now:</h5>
-	<p><%= alumni_profile.current_job %></p>
-	<h5>Education:</h5>
-	<p><%= alumni_profile.education %></p>
+	<% unless alumni_profile.isa_job.blank? %>
+		<h5 class="first">Role at ISA:</h5>
+		<p><%= alumni_profile.isa_job %><p>
+	<% end %>
+	<% unless alumni_profile.current_job.blank? %>
+		<h5>Now:</h5>
+		<p><%= alumni_profile.current_job %></p>
+	<% end %>
+	<% unless alumni_profile.current_job.blank? %>
+		<h5>Education:</h5>
+		<p><%= alumni_profile.education %></p>
+	<% end %>
 </div>
 <div class="alumni-profile-questions">
 	<%= textilize(alumni_profile.questions) %>

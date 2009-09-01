@@ -1,7 +1,7 @@
 class AlumniProfile < ActiveRecord::Base
   has_one :content, :as => :contentable, :dependent => :destroy
   
-  validates_presence_of :name, :isa_job, :current_job, :education, :questions, :quotation
+  validates_presence_of :name
   
   accepts_nested_attributes_for :content
   
