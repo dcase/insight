@@ -469,6 +469,11 @@ ul.feed li {
 ul.feed li a {
 	text-decoration: underline;
 }
+#block_50 h4, #block_49 h4 {
+	padding: 0;
+	background: transparent;
+	font-size: 30px;
+}
 
 /*****************
 * Services
