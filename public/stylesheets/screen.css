@@ -475,6 +475,10 @@ ul.feed li a {
 	font-size: 30px;
 	margin-bottom: 25px;
 }
+#block_50 ul.feed li,
+#block_49 ul.feed li {
+	margin-bottom: 5px;
+}
 
 /*****************
 * Services
