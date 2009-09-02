@@ -1,4 +1,4 @@
-<h3><%= Date.current.to_formatted_s(:long_ordinal) %></h3>
+<h5><%= Date.current.to_formatted_s(:long_ordinal) %></h5>
 <% content_tag_for(:ul, feed) do %>
 	<% feed.feed_entries[0...feed.display_count].each do |entry| %>
 		<% content_tag_for(:li, entry) do %>
