@@ -459,6 +459,9 @@ div#search input#search {
 /*****************
 * News
 ******************/
+.section_4 #content {
+	padding: 40px 30px 25px 135px;
+}
 ul.feed {
 	padding-left: 10px;
 	list-style-position: inside;
