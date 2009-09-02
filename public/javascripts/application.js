@@ -608,7 +608,7 @@ $(document).ready( function() {
 	
 	// Sync values between fake fields and real fields
 	$("input#job_application_resume, input#job_application_letter").livequery("change", function(event) {
-		$(this).parents(".file_upload:first").find(".fake-upload-field").val($(this).val());
+		$(this).parents(".file_upload:first").find(".fake-upload-field:first").val($(this).val());
 	});
 	
 		
