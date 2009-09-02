@@ -16,7 +16,7 @@
 		<h5>Now:</h5>
 		<p><%= alumni_profile.current_job %></p>
 	<% end %>
-	<% unless alumni_profile.current_job.blank? %>
+	<% unless alumni_profile.education.blank? %>
 		<h5>Education:</h5>
 		<p><%= alumni_profile.education %></p>
 	<% end %>
