@@ -1,0 +1,14 @@
+<% form_for((@job_application || JobApplication.new), :html => { :class => "ajax inline", :multipart => true }) do |f| %>
+  <%= f.error_messages %>
+	<table id="online_application">
+	
+		<%= render :partial => "job_applications/form", :locals => { :form => f } %>  
+		
+		<tr>
+			<td colspan="2" class="submit-container">
+				<%= image_submit_tag "submit.png" %>
+			</td>
+		</tr>
+
+	</table>
+<% end %>

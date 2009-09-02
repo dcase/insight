@@ -72,6 +72,9 @@ $(document).ready( function() {
 	$('.modal').livequery( function(){
 		$('#modal').jqmAddTrigger('.modal');
 	});
+	$("#close-application-sucess-window").livequery(function() {
+		$("#modal").jqmAddClose("#close-application-sucess-window");
+	});
 	
 	// Add second window, if needed
 	$('.modal-new-window').livequery( function() {
@@ -111,6 +114,12 @@ $(document).ready( function() {
 			current_modal = modal2;
 			current_window = $('#modal-content2');
 			current_trigger = modal2_trigger;
+		}
+		else if ($(this).hasClass("inline")) {
+			is_tab = false;
+			current_modal = modal;
+			current_window = $(this).parent();
+			current_trigger = null;
 		} else {
 			is_tab = false;
 			current_modal = modal;
@@ -540,6 +549,7 @@ $(document).ready( function() {
 			parentMO: "parent-hover"
 		});
 	});
+
 	
 	/*************************
 	** sIFR stuff
@@ -587,6 +597,18 @@ $(document).ready( function() {
 				$(".view2", this).hide();
 				$(".view1", this).show();
 			});
+	});
+	
+	/** Join ISA > Online Application **/
+	
+	// Fade real upload fields so fake fields underneath show instead
+	$("input#job_application_resume, input#job_application_letter").livequery( function() {
+		$(this).fadeTo(0,0.01);
+	});
+	
+	// Sync values between fake fields and real fields
+	$("input#job_application_resume, input#job_application_letter").livequery("change", function(event) {
+		$(this).next("input").val($(this).val());
 	});
 	
 		

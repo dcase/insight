@@ -1,0 +1,68 @@
+<p>
+  <b>First name:</b>
+  <%=h @job_application.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%=h @job_application.last_name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @job_application.email %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%=h @job_application.phone %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%=h @job_application.position %>
+</p>
+
+<p>
+  <b>Resume file name:</b>
+  <%=h @job_application.resume_file_name %>
+</p>
+
+<p>
+  <b>Resume content type:</b>
+  <%=h @job_application.resume_content_type %>
+</p>
+
+<p>
+  <b>Resume file size:</b>
+  <%=h @job_application.resume_file_size %>
+</p>
+
+<p>
+  <b>Resume updated at:</b>
+  <%=h @job_application.resume_updated_at %>
+</p>
+
+<p>
+  <b>Letter file name:</b>
+  <%=h @job_application.letter_file_name %>
+</p>
+
+<p>
+  <b>Letter content type:</b>
+  <%=h @job_application.letter_content_type %>
+</p>
+
+<p>
+  <b>Letter file size:</b>
+  <%=h @job_application.letter_file_size %>
+</p>
+
+<p>
+  <b>Letter updated at:</b>
+  <%=h @job_application.letter_updated_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_job_application_path(@job_application) %> |
+<%= link_to 'Back', job_applications_path %>

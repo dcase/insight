@@ -1,0 +1,64 @@
+	<tr>
+		<td class="label">
+    <%= form.label :first_name, "First Name*" %>
+		</td>
+		<td class="field">
+    <%= form.text_field :first_name %>
+  	</td>
+	</tr>
+  <tr>
+		<td class="label">
+    <%= form.label :last_name, "Last Name*" %>
+		</td>
+		<td class="field">
+    <%= form.text_field :last_name %>
+  	</td>
+	</tr>
+  <tr>
+		<td class="label">
+    <%= form.label :email, "Email Address*" %>
+		</td>
+		<td class="field">
+    <%= form.text_field :email %>
+  	</td>
+	</tr>
+  <tr>
+		<td class="label">
+    <%= form.label :phone, "Phone Number" %>
+		</td>
+		<td class="field">
+    <%= form.text_field :phone %>
+  	</td>
+	</tr>
+  <tr>
+		<td class="label">
+    <%= form.label :position, "Desired Position" %>
+		</td>
+		<td class="field">
+    <%= form.select :position, ["Analyst", "Consultant", "Senior Consultant"], :include_blank => true %>
+  	</td>
+	</tr>
+  <tr>
+		<td class="label">
+    <%= form.label :resume, "Resume*" %>
+		</td>
+		<td class="field">
+			<div class="file_upload">
+    		<%= form.file_field :resume %>
+				<%= text_field_tag "fake_resume_field", nil, :size => 30, :class => "fake-upload-field" %>
+				<%= image_tag "browse.png", :size => "78x25", :alt => "Browse", :class => "fake-browse-button" %>
+			</div>
+  	</td>
+	</tr>
+  <tr>
+		<td class="label">
+    <%= form.label :letter, "Cover Letter" %>
+		</td>
+		<td class="field">
+    	<div class="file_upload">
+    		<%= form.file_field :letter	 %>
+				<%= text_field_tag "fake_letter_field", nil, :size => 30, :class => "fake-upload-field" %>
+				<%= image_tag "browse.png", :size => "78x25", :alt => "Browse", :class => "fake-browse-button" %>
+			</div>
+  	</td>
+	</tr>

@@ -471,8 +471,11 @@ ul.feed li a {
 }
 
 /*****************
-* News
+* Services
 ******************/
+
+/** Alumni Profiles **/
+
 .alumni-profile-quotation {
 	font-style: italic;
 	margin-bottom: 25px;
@@ -500,6 +503,57 @@ ul.feed li a {
 }
 .alumni-profile-questions {
 	margin-left: 193px;
+}
+
+/** Online Application **/
+#application-success {
+	padding: 60px;
+}
+#application-success p {
+	margin: 15px 0 30px 0;
+}
+#application-success img {
+	cursor: pointer;
+}
+#online_application td.label {
+	width: 135px;
+	color: rgb(14,168,231);
+	font-weight: bold;
+	font-size: 1.33em;
+	text-align: right;
+	padding: 10px 5px;
+}
+#online_application td.field input {
+	border: 1px solid #676770;
+}
+#online_application td.submit-container {
+	text-align: right;
+}
+#online_application select {
+	width: 220px;
+}
+.file_upload {
+	position: relative;
+}
+input#job_application_resume,
+input#job_application_letter {
+	position: absolute;
+	top: -10px;
+	left: 0;
+	z-index: 2;
+}
+input.fake-upload-field {
+	position: absolute;
+	top: -10px;
+	left: 0;
+	z-index: 1;
+}
+img.fake-browse-button {
+	position: absolute;
+	top: -10px;
+	right: -88px;
+	z-index: 1;
+	cursor: pointer;
 }
 /*****************
 * Contact

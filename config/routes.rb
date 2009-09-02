@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :job_applications
+
 
   map.resources :alumni_profiles
 
