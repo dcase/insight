@@ -485,7 +485,27 @@ ul.feed li a {
 .page_17 h5 {
 	font-size: 1em;
 }
-
+#blog_title h4 {
+	padding-left: 0;
+	background: transparent;
+	font-size: 30px;
+	font-weight: normal;
+	color: rgb(14,168,231);
+	line-height: 133%;
+	margin-top: 0;
+}
+div#blog_title img#blog_rss_link {
+	position: relative;
+	top: -12px;
+	margin-left: 0;
+}
+ul.blog_posts {
+	padding: 0;
+	list-style-position: inside;
+}
+ul.blog_posts li {
+	margin-bottom: 10px;
+}
 /*****************
 * Services
 ******************/
