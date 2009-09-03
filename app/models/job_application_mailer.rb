@@ -2,8 +2,8 @@ class JobApplicationMailer < ActionMailer::Base
   
 
   def submit(job_application)
-    subject    'new online application from website'
-    recipients 'case_darren@yahoo.com'
+    subject    'new online application from insightstrat.com'
+    recipients 'info@commandc.com'
     from       'apply_online@insightstrat.com'
     sent_on    Time.now
     
