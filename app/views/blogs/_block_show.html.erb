@@ -2,10 +2,10 @@
 	<%= auto_discovery_link_tag :rss, blog_posts_url(1, :format => :rss) %>
 <% end %>
 
-<h4>
-	<%= link_to blog.title, blog %>
+<div class="heading">
+	<span class="myriadpro"><%= link_to blog.title, blog %></span>
 	<%= link_to image_tag("rss.png", :size => "18x20", :alt => "RSS icon"), blog_posts_url(blog, :format => :rss), :title => "RSS", :target => "_blank" %>
-</h4>
+</div>
 <ul class="blog_posts">
 	<% blog.recent_posts(4).each do |post| %>
 		<% content_tag_for :li, post do %>

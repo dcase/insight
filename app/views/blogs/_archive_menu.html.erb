@@ -1,5 +1,6 @@
 <% start_year = @first_post.published_on.year %>
 <div class="block sidebar-right">
+	<h4 class="myriadpro">Archives</h4>
 	<ul id="blog_archive_menu">
 		<% (start_year..Date.current.year).to_a.reverse.each do |year| %>
 			<li>
