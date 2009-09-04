@@ -35,12 +35,13 @@ function addPaginationLinks() {
 }
 
 function searchComplete() {
+	// Grab our content div, clear it.
+  var contentDiv = document.getElementById('content');
+  contentDiv.innerHTML = '';
+
   // Check that we got results
   if (webSearch.results && webSearch.results.length > 0) {
-    // Grab our content div, clear it.
-    var contentDiv = document.getElementById('content');
-    contentDiv.innerHTML = '';
-
+   
     // Loop through our results, printing them to the page.
     var results = webSearch.results;
     for (var i = 0; i < results.length; i++) {
@@ -60,7 +61,9 @@ function searchComplete() {
 
     // Now add the paging links so the user can see more results.
     addPaginationLinks(webSearch);
-  }
+  } else {
+		contentDiv.innerHTML = "<div id=\"no_search_result\">There were no results for your search.</div>"
+	}
 }
 
 function OnLoad() {
@@ -80,7 +83,7 @@ function OnLoad() {
 	
 
 	// Cheat by using some jQuery
-	$("#google_search_form").submit( function(event) {
+	$("#google_search_form").bind("submit", function(event) {
 		webSearch.execute($("input#search").val());
 		event.preventDefault();
 	})
