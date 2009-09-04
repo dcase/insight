@@ -59,15 +59,19 @@ div#logo p {
 	padding-left: 4px;
 	margin: 4px 0 0 0;
 }
-div#search {
+div#search_form{
 	position: absolute;
 	top: 0;
 	right: 0;
 }
+div#google_branding {
+	padding-right: 20px;
+	text-align: right;
+}
 #font-size-switcher {
 	float: none;
 	position: absolute;
-	top: 25px;
+	top: 38px;
 	right: 25px;
 }
 div#navigation {
@@ -143,7 +147,7 @@ h1,h2,h3,h4,h5,h6 {
 	padding-left: 13px;
 	background: transparent url(/images/gray-right-arrow.png) no-repeat 0 2px;
 }
-div#search, #font-size-switcher {
+div#search_form, #font-size-switcher {
 	color: #999;
 }
 
@@ -316,7 +320,7 @@ ul#pagemenu > li ul a.current {
 /*****************
 * Search
 ******************/
-div#search input#search {
+div#search_form input#search {
 	border: 1px solid #7f7f7f;
 	padding: 1px;
 	margin-left: 3px;
