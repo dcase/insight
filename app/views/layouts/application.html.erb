@@ -34,7 +34,6 @@
 </head>
 <body class="<%= yield :body_class %>">
 <%= (alert = yield(:alert)) ? "<div id=\"alert\">" + alert + "</div>" : "" %>
-<h1 id="seo-heading1"><%= (heading = yield(:seo_heading1)) ? heading : "SEO heading" %></h1>
 <div id="container" class="<%= yield :container_class %>">
 	<%= render :partial => "common/header"%>
 
@@ -46,7 +45,6 @@
 	<%= render :partial => "common/footer"%>
 </div><!-- end 'container' -->
 
-<h2 id="seo-heading2"><%= (heading = yield(:seo_heading2)) ? heading : "SEO heading" %></h2>
 <% if authorized? %>
 	<%= render :partial => 'common/admin_toolbar' %>
 <% end %>

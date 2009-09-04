@@ -27,7 +27,11 @@ img, input {
 * SEO
 ******************/
 #seo-heading1 {
-	display: none;
+	margin: 0;
+	font-weight: normal;
+	text-align: center;
+	font-size: 0.83em;
+	color: #86898a;
 }
 #seo-heading2 {
 	display: none;
@@ -333,7 +337,7 @@ div#search input#search {
 	padding: 40px 390px 25px 70px;
 	background: transparent url(/images/home-background.jpg) no-repeat 100% 120px;
 }
-.section_1 h4 {
+.block_1 h4 {
 	background: transparent;
 	padding: 0;
 }
@@ -344,7 +348,23 @@ div#search input#search {
 .section_1 #learn_more {
 	margin-top: 25px;
 }
-
+.recent-news,
+#block_30 {
+	padding-top: 0;
+	margin-bottom: 0;
+}
+.recent-news h4 {
+	font-size: 22px;
+	position: relative;
+	left: -15px;
+	background-position: 0 5px;
+}
+.recent-news ul.blog_posts {
+	margin: 8px 0;
+}
+.recent-news ul.blog_posts li {
+	margin-bottom: 3px;
+}
 /*****************
 * About Us
 ******************/
