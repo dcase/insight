@@ -25,7 +25,7 @@
 
 <% div_for @post, :class => "content has-sidebar-right" do %>
 	<div id="blog_title">
-		<h4><%= link_to @blog.title, @blog %></h4>
+		<h4 class="heading myriadpro"><%= @blog.title %></h4>
 		<%= link_to image_tag("rss.png", :size => "18x20", :alt => "RSS icon", :id => "blog_rss_link"), blog_posts_url(@blog, :format => :rss), :title => "RSS", :target => "_blank" %>
 	</div>
 	<div class="post_title">

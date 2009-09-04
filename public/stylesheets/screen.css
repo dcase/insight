@@ -506,6 +506,13 @@ ul.blog_posts {
 ul.blog_posts li {
 	margin-bottom: 10px;
 }
+.post_title {
+	font-weight: bold;
+	font-size: 1.25em;
+}
+.post_date {
+	font-weight: bold;
+}
 /*****************
 * Services
 ******************/
