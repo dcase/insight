@@ -513,6 +513,33 @@ ul.blog_posts li {
 .post_date {
 	font-weight: bold;
 }
+.post_body {
+	height: 310px;
+	position: relative;
+}
+.post_back_button {
+	margin-top: 15px;
+}
+#blog_archive_menu {
+	list-style: none;
+	padding-left: 15px;
+}
+#blog_archive_menu li ul.months {
+	list-style: none;
+	padding: 0;
+}
+#blog_archive_menu li ul.months {
+ margin-bottom: 20px;
+}
+#blog_archive_menu li,
+#blog_archive_menu li ul.months li {
+	padding: 0;
+}
+#blog_archive_menu > li > a {
+	text-decoration: underline;
+	font-weight: bold;
+	color: rgb(14,168,231);
+}
 /*****************
 * Services
 ******************/
