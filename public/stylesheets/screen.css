@@ -325,6 +325,13 @@ div#search_form input#search {
 	padding: 1px;
 	margin-left: 3px;
 }
+.search_result {
+	padding-bottom: 5px;
+}
+.search_result .search_result_title a {
+	font-weight: bold;
+	color: rgb(14,168,231);
+}
 
 
 /******************************

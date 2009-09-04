@@ -44,21 +44,38 @@ function searchComplete() {
    
     // Loop through our results, printing them to the page.
     var results = webSearch.results;
+		var resultsContainer = document.createElement('div');
+		resultsContainer.setAttribute("id","search_results");
     for (var i = 0; i < results.length; i++) {
       // For each result write it's title and image to the screen
       var result = results[i];
       var resultContainer = document.createElement('div');
+			resultContainer.setAttribute("class","search_result");
 
       var title = document.createElement('div');
+			title.setAttribute("class","search_result_title");
+			
+			var link = document.createElement('a');
+			link.href = result.unescapedUrl;
+			link.target = "_blank";
+			
       // We use titleNoFormatting so that no HTML tags are left in the title
-      title.innerHTML = result.titleNoFormatting;
+      link.innerHTML = result.titleNoFormatting;
+			title.appendChild(link);
 
       resultContainer.appendChild(title);
 
-      // Put our title + image in the content
-      contentDiv.appendChild(resultContainer);
-    }
+			content = document.createElement('div');
+			content.setAttribute("class","search_result_content");
+			content.innerHTML = result.content
+			
+			resultContainer.appendChild(content);
 
+      // Put our title + image in the content
+			
+      resultsContainer.appendChild(resultContainer);
+    }
+		contentDiv.appendChild(resultsContainer);
     // Now add the paging links so the user can see more results.
     addPaginationLinks(webSearch);
   } else {
@@ -69,9 +86,10 @@ function searchComplete() {
 function OnLoad() {
   // Our ImageSearch instance.
   webSearch = new google.search.WebSearch();
+	webSearch.setResultSetSize(google.search.Search.LARGE_RESULTSET);
 
   // Restrict to extra large images only
-  webSearch.setSiteRestriction("insight.commandc.com");
+  // webSearch.setSiteRestriction("insight.commandc.com");
 
   // Here we set a callback so that anytime a search is executed, it will call
   // the searchComplete function and pass it our ImageSearch searcher.
