@@ -20,7 +20,7 @@
 	<%= javascript_include_tag 'iepngfix_tilebg' %>
 	<![endif]-->
 	<%= javascript_tag "var AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery? %>
-	<%= javascript_include_tag "http://www.google.com/jsapi?key=ABQIAAAA5kqzz0bF_RySAYP_OsEV4hScHveORTP1C3MRWBGY-QV5r5K5xxRzH0joR9OH1x-_BZY4XWu6jslQYw" %>
+	<script src="http://www.google.com/jsapi?key=ABQIAAAA5kqzz0bF_RySAYP_OsEV4hScHveORTP1C3MRWBGY-QV5r5K5xxRzH0joR9OH1x-_BZY4XWu6jslQYw" type="text/javascript"></script>
 	<%= javascript_include_tag 'jquery',
 	'jquery-ui',
 	'jquery.livequery',
