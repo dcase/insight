@@ -37,7 +37,7 @@ function addPaginationLinks() {
       pagesDiv.appendChild(link);
     }
   }
-	if (curPage < cursor.pages.length) {
+	if (curPage < (cursor.pages.length-1)) {
 		var link = document.createElement('a');
     link.href = 'javascript:webSearch.gotoPage('+ (curPage+1) +');';
     link.innerHTML = "Next >>";
