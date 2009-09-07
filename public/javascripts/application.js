@@ -511,16 +511,24 @@ $(document).ready( function() {
 	});
 	
 	// Sorting main menu
-	
-	$(".admin-mode #mainmenu, .admin-mode #mainmenu ul").each( function() {
+	/*
+	$(".admin-mode ul#mainmenu").livequery( function() {
 	 	$(this).sortable({ 
-			items: "> li", 
-			axis: "y", 
-			containment: "parent", 
-			placeholder: "ui-state-highlight",
-			forcePlaceholderSize: true,
-			helper: 'clone',
-			tolerance: 'pointer',
+			items: "> li",
+			axis: "x",  
+			update: function(event, ui) {
+				$.post('/sections/order', $(ui.item).parent().sortable('serialize'));
+			}
+		});
+	});
+	*/
+
+	// Sorting sitemap
+	
+	$(".admin-mode ul#sitemap > li ul").livequery( function() {
+	 	$(this).sortable({ 
+			items: "> li",
+			axis: "y",  
 			update: function(event, ui) {
 				$.post('/sections/order', $(ui.item).parent().sortable('serialize'));
 			}

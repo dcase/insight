@@ -320,16 +320,36 @@ ul#pagemenu > li ul a.current {
 /*****************
 * Search
 ******************/
+div#search_results_container {
+	position: absolute;
+	top: 19px;
+	right: 19px;
+	z-index: 999;
+	background: white;
+	border: 1px solid #ccc;
+	padding: 5px;
+}
 div#search_form input#search {
 	border: 1px solid #7f7f7f;
 	padding: 1px;
 	margin-left: 3px;
+}
+#search_results {
+	text-align: left;
+	height: 250px;
+	overflow: auto;
 }
 .search_result {
 	padding-bottom: 5px;
 }
 .search_result .search_result_title a {
 	font-weight: bold;
+	color: rgb(14,168,231);
+}
+#search_results_pagination {
+	padding: 3px 0;
+}
+#search_results_pagination a {
 	color: rgb(14,168,231);
 }
 

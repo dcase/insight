@@ -14,6 +14,14 @@ function addPaginationLinks() {
   var cursor = webSearch.cursor;
   var curPage = cursor.currentPageIndex; // check what page the app is on
   var pagesDiv = document.createElement('div');
+	pagesDiv.setAttribute("id","search_results_pagination");
+	if (curPage > 0) {
+		var link = document.createElement('a');
+    link.href = 'javascript:webSearch.gotoPage('+ (curPage-1) +');';
+    link.innerHTML = "<< Prev";
+    link.style.marginRight = '2px';
+    pagesDiv.appendChild(link);
+	}
   for (var i = 0; i < cursor.pages.length; i++) {
     var page = cursor.pages[i];
     if (curPage == i) { // if we are on the curPage, then don't make a link
@@ -29,14 +37,21 @@ function addPaginationLinks() {
       pagesDiv.appendChild(link);
     }
   }
+	if (curPage < cursor.pages.length) {
+		var link = document.createElement('a');
+    link.href = 'javascript:webSearch.gotoPage('+ (curPage+1) +');';
+    link.innerHTML = "Next >>";
+    link.style.marginRight = '2px';
+    pagesDiv.appendChild(link);
+	}
 
-  var contentDiv = document.getElementById('content');
+  var contentDiv = document.getElementById('search_results_container');
   contentDiv.appendChild(pagesDiv);
 }
 
 function searchComplete() {
 	// Grab our content div, clear it.
-  var contentDiv = document.getElementById('content');
+  var contentDiv = document.getElementById('search_results_container');
   contentDiv.innerHTML = '';
 
   // Check that we got results
@@ -67,7 +82,7 @@ function searchComplete() {
 
 			content = document.createElement('div');
 			content.setAttribute("class","search_result_content");
-			content.innerHTML = result.content
+			content.innerHTML = result.content;
 			
 			resultContainer.appendChild(content);
 
@@ -79,8 +94,20 @@ function searchComplete() {
     // Now add the paging links so the user can see more results.
     addPaginationLinks(webSearch);
   } else {
-		contentDiv.innerHTML = "<div id=\"no_search_result\">There were no results for your search.</div>"
+		contentDiv.innerHTML = "<div id=\"no_search_result\">There were no results for your search.</div>";
 	}
+	// Add close button
+	var closeDiv = document.createElement('div');
+	var closeLink = document.createElement('a');
+	closeLink.setAttribute("id","close_search_results");
+	closeLink.innerHTML = "[X] close";
+	closeDiv.appendChild(closeLink);
+	contentDiv.appendChild(closeDiv);
+	$("#close_search_results").click( function(event) {
+		$("#search_results_container").hide().html("");
+	});
+	// cheat with jQuery to show results
+	$(contentDiv).show();
 }
 
 function OnLoad() {
