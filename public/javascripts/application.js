@@ -233,6 +233,7 @@ $(document).ready( function() {
 	$("#container .block, #container .content",".admin-mode").livequery( function() {
 		$(this).hover(
 			function() {
+				alert("over");
 				$(".active-admin").not($(this).parents()).removeClass("active-admin");
 				$(".admin-links:visible").hide();
 				$(this).addClass("active-admin");
