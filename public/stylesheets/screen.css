@@ -66,12 +66,14 @@ div#search_form{
 	top: 0;
 	right: 0;
 	text-align: right;
+	z-index: 999;
 }
 div#google_branding {
 	position: absolute;
 	right: 20px;
 	top: 20px;
 	text-align: right;
+	z-index: 998;
 }
 #font-size-switcher {
 	float: none;
