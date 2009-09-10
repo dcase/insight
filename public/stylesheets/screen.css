@@ -362,6 +362,12 @@ div#search_form input#search {
 	text-align: left;
 	height: 250px;
 	overflow: auto;
+	position: static;
+	z-index: 999;
+}
+#search_results div {
+	position: static;
+	z-index: 999;
 }
 .search_result {
 	padding-bottom: 5px;
@@ -372,6 +378,8 @@ div#search_form input#search {
 }
 #search_results_pagination {
 	padding: 3px 0;
+	position: static;
+	z-index: 999;
 }
 #search_results_pagination a {
 	color: rgb(14,168,231);
