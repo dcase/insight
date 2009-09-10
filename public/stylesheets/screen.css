@@ -87,6 +87,7 @@ div#content {
 	/*width: 820px;*/
 	min-height: 430px;
 	position: relative;
+	z-index: 1;
 }
 div#sidebar-left,
 div.sidebar-left {
