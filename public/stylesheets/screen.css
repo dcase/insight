@@ -369,25 +369,25 @@ div#search_form input#search {
 	position: static;
 	z-index: 999;
 }
-.search_result {
+#search_results div div {
 	padding-bottom: 5px;
 }
-#search_result a:link {
+#search_results a:link {
 	font-weight: bold;
 	color: rgb(14,168,231);
 	text-decoration: none;
 }
-#search_result a:visited {
+#search_results a:visited {
 	font-weight: bold;
 	color: rgb(14,168,231);
 	text-decoration: none;
 }
-#search_result a:hover {
+#search_results a:hover {
 	font-weight: bold;
 	color: rgb(14,168,231);
 	text-decoration: underline;
 }
-#search_result a:active {
+#search_results a:active {
 	font-weight: bold;
 	color: rgb(14,168,231);
 	text-decoration: none;
