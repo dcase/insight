@@ -350,9 +350,6 @@ div#search_results_container {
 	border: 1px solid #ccc;
 	padding: 5px;
 }
-#google_search_form {
-	width: 350px;
-}
 div#search_form input#search {
 	border: 1px solid #7f7f7f;
 	padding: 1px;
