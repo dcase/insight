@@ -22,9 +22,6 @@ img, input {
 #gray-line img {
 	margin-top: 15px;
 }
-ul {
-	margin-left: 0;
-}
 
 /*****************
 * SEO
@@ -540,6 +537,7 @@ div#search_form input#search {
 ul.feed {
 	padding-left: 10px;
 	list-style-position: inside;
+	margin-left: 0;
 }
 ul.feed li {
 	margin-bottom: 20px;
@@ -577,6 +575,7 @@ div#blog_title img#blog_rss_link {
 ul.blog_posts {
 	padding: 0;
 	list-style-position: inside;
+	margin-left: 0;
 }
 ul.blog_posts li {
 	margin-bottom: 10px;
@@ -598,6 +597,7 @@ ul.blog_posts li {
 #blog_archive_menu {
 	list-style: none;
 	padding-left: 15px;
+	margin-left: 0;
 }
 #blog_archive_menu li ul.months {
 	list-style: none;
