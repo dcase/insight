@@ -96,6 +96,10 @@ div#content {
 	position: relative;
 	z-index: 1;
 }
+div#main {
+	position: relative;
+	z-index 2;
+}
 div#sidebar-left,
 div.sidebar-left {
 	float: left;
