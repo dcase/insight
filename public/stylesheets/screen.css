@@ -69,8 +69,8 @@ div#search_form{
 }
 div#google_branding {
 	position: absolute;
-	right: 0;
-	top: 18px;
+	right: 20px;
+	top: 20px;
 	text-align: right;
 }
 #font-size-switcher {
