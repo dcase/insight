@@ -44,10 +44,12 @@ div#container {
 	text-align: left;
 	width: 880px;
 	margin: 25px auto 15px auto;
+	position: relative;
 }
 div#header {
 	height: 90px;
 	position: relative;
+	z-index: 998;
 }
 div#logo {
 	position: absolute;
