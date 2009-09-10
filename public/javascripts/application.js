@@ -552,7 +552,7 @@ $(document).ready( function() {
 	
 	$("#mainmenu").livequery( function() {
 		$(this).dropDownMenu({
-			timer: 100,
+			timer: 500,
 			childMO: "child-hover",
 			parentMO: "parent-hover"
 		});

@@ -10,9 +10,3 @@
 .clearfix{
   min-height: 1%;
 }
-ul#mainmenu > li ul {
-	top: 24px;
-}
-ul#mainmenu > li > a {
-	padding-bottom: 5px;
-}
