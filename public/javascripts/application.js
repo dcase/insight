@@ -557,37 +557,14 @@ $(document).ready( function() {
 			parentMO: "parent-hover"
 		});
 	});
-
 	
-	/*************************
-	** sIFR stuff
-	**************************/
+	// Remove marging on top paragraphs
 
-/*	
-	$(".myriadpro").livequery( function(){
-		$(this).sifr({
-			build: 436,
-			version: 3,
-			font: "myriad_pro",
-			path: "/images/"
-		});
+	$(".content p:first").livequery( function() {
+		$(this).addClass("top");
 	});
 	
-	$("ul#pagemenu > li > a").livequery( function(){
-		$(this).sifr({
-			build: 436,
-			version: 3,
-			font: "myriad_pro",
-			path: "/images/",
-			cursor: "pointer",
-			hoverColor: "#0EA8E7",
-			link: $(this).attr('href')
-		});
-		$("object", this).click( function() {
-			window.location.href = $(this).parents('a:first').attr('href');
-		});
-	});
-*/
+
 	/*************************
 	** Page specific stuff
 	**************************/
