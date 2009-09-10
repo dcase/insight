@@ -33,14 +33,13 @@ img {
 div.content, div.block {
 	position: relative;
 	border: 2px solid transparent;
-	background: transparent;
 }
 .admin-mode div.block {
+	padding-top: 23px;
 	margin-bottom: 15px;
 	z-index: 3;
 }
-.admin-mode div.content {
-	margin-top: 23px;
+div.content {
 	z-index: 4;
 }
 div.block {
