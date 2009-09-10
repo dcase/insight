@@ -372,22 +372,22 @@ div#search_form input#search {
 .search_result {
 	padding-bottom: 5px;
 }
-.search_result .search_result_title a:link {
+#search_result a:link {
 	font-weight: bold;
 	color: rgb(14,168,231);
 	text-decoration: none;
 }
-.search_result .search_result_title a:visited {
+#search_result a:visited {
 	font-weight: bold;
 	color: rgb(14,168,231);
 	text-decoration: none;
 }
-.search_result .search_result_title a:hover {
+#search_result a:hover {
 	font-weight: bold;
 	color: rgb(14,168,231);
 	text-decoration: underline;
 }
-.search_result .search_result_title a:active {
+#search_result a:active {
 	font-weight: bold;
 	color: rgb(14,168,231);
 	text-decoration: none;
@@ -398,7 +398,7 @@ div#search_form input#search {
 	z-index: 999;
 }
 #search_results_pagination a {
-	color: rgb(14,168,231);
+	font-weight: normal;
 }
 
 
