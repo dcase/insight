@@ -80,6 +80,7 @@ div#navigation {
 	bottom: 6px;
 	right: 0;
 	z-index: 998;
+	height: 24px
 }
 div#content {
 	border: 1px solid #aeaeae;
