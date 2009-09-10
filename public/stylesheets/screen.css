@@ -372,9 +372,25 @@ div#search_form input#search {
 .search_result {
 	padding-bottom: 5px;
 }
-.search_result .search_result_title a {
+.search_result .search_result_title a:link {
 	font-weight: bold;
 	color: rgb(14,168,231);
+	text-decoration: none;
+}
+.search_result .search_result_title a:visited {
+	font-weight: bold;
+	color: rgb(14,168,231);
+	text-decoration: none;
+}
+.search_result .search_result_title a:hover {
+	font-weight: bold;
+	color: rgb(14,168,231);
+	text-decoration: underline;
+}
+.search_result .search_result_title a:active {
+	font-weight: bold;
+	color: rgb(14,168,231);
+	text-decoration: none;
 }
 #search_results_pagination {
 	padding: 3px 0;
