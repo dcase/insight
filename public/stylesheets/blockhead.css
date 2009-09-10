@@ -33,6 +33,7 @@ img {
 div.content, div.block {
 	position: relative;
 	border: 2px solid transparent;
+	background: transparent;
 }
 .admin-mode div.block {
 	margin-bottom: 15px;
