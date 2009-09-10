@@ -205,6 +205,7 @@ ul#mainmenu {
 ul#mainmenu > li {
 	float: left;
 	position: relative;
+	z-index: 998;
 }
 ul#mainmenu > li.first > a {
 	border-left: 0;
