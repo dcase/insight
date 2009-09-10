@@ -255,7 +255,7 @@ ul#mainmenu > li ul {
 	left: -4px;
 	top: 28px;
 	margin: -1px 0 0 0;
-	z-index: 90;
+	z-index: 998;
 	padding: 0;
 }
 
