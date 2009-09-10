@@ -63,6 +63,7 @@ div#search_form{
 	position: absolute;
 	top: 0;
 	right: 0;
+	text-align: right;
 }
 div#google_branding {
 	padding-right: 20px;
@@ -129,10 +130,14 @@ body {
 	font-family: helvetica, arial, sans-serif;
 	line-height: 133%;
 }
+.myriadpro {
+	font-family: "Myriad Pro";
+}
 h1,h2,h3,h4,h5,h6 {
 	margin: 0;
 }
 .heading {
+	font-family: MyriadPro;
 	font-size: 36px;
 	font-weight: normal;
 	color: rgb(14,168,231);
@@ -292,6 +297,7 @@ ul#pagemenu > li {
 	margin-bottom: 5px;
 }
 ul#pagemenu > li > a {
+	font-family: MyriadPro;
 	font-size: 1.5em;
 	color: #666;
 	text-decoration: none;
@@ -328,6 +334,9 @@ div#search_results_container {
 	background: white;
 	border: 1px solid #ccc;
 	padding: 5px;
+}
+#google_search_form {
+	width: 300px;
 }
 div#search_form input#search {
 	border: 1px solid #7f7f7f;
@@ -374,7 +383,6 @@ div#search_form input#search {
 }
 .section_1 .heading {
 	font-size: 59px;
-	margin-bottom: 40px;
 }
 .section_1 #learn_more {
 	margin-top: 25px;

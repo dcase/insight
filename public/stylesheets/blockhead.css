@@ -34,8 +34,11 @@ div.content, div.block {
 	position: relative;
 	border: 2px solid transparent;
 }
-div.block {
+.admin-mode div.block {
 	padding-top: 23px;
+	margin-bottom: 15px;
+}
+div.block {
 	margin-bottom: 15px;
 }
 

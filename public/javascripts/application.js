@@ -563,7 +563,7 @@ $(document).ready( function() {
 	** sIFR stuff
 	**************************/
 
-	
+/*	
 	$(".myriadpro").livequery( function(){
 		$(this).sifr({
 			build: 436,
@@ -587,7 +587,7 @@ $(document).ready( function() {
 			window.location.href = $(this).parents('a:first').attr('href');
 		});
 	});
-	
+*/
 	/*************************
 	** Page specific stuff
 	**************************/

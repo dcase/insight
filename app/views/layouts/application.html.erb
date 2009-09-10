@@ -1,5 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<title><%= (title = yield(:title)) ? title : "SEO title" %></title>
@@ -29,8 +30,11 @@
 	'jquery.scrollTo',
 	'jquery.serialScroll',
 	'jquery.multi-ddm',
-	'jquery.swfobject',
-	'jquery.sifr',
+	#'jquery.swfobject',
+	#'jquery.sifr',
+	'cufon-yui',
+	'MyriadPro_400-MyriadPro_700.font',
+	'cufon.replace',
 	'google.search',
 	'application' %>
 	<%= yield :page_js %>
@@ -51,5 +55,6 @@
 <% if authorized? %>
 	<%= render :partial => 'common/admin_toolbar' %>
 <% end %>
+<%= javascript_tag "Cufon.now();" %>
 </body>
 </html>

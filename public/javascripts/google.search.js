@@ -80,7 +80,7 @@ function searchComplete() {
 
       resultContainer.appendChild(title);
 
-			content = document.createElement('div');
+			var content = document.createElement('div');
 			content.setAttribute("class","search_result_content");
 			content.innerHTML = result.content;
 			
