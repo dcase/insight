@@ -202,6 +202,8 @@ ul#mainmenu {
 	padding: 0;
 	margin: 0;
 	height: 24px;
+	position: static;
+	z-index: 998;
 }
 ul#mainmenu > li {
 	float: left;
@@ -260,6 +262,10 @@ ul#mainmenu > li ul {
 	margin: -1px 0 0 0;
 	z-index: 998;
 	padding: 0;
+}
+ul#mainmenu > li ul li {
+	position: static;
+	z-index: 998;
 }
 
 ul#mainmenu > li ul a {
