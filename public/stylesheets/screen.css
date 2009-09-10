@@ -203,15 +203,15 @@ ul#mainmenu {
 }
 ul#mainmenu > li {
 	float: left;
-	padding: 4px 8px;
-	border-left: 2px solid rgb(14,168,231);
 	position: relative;
 }
-ul#mainmenu > li.first {
+ul#mainmenu > li.first > a {
 	border-left: 0;
 }
 ul#mainmenu > li > a {
 	display: block;
+	padding: 4px 8px;
+	border-left: 2px solid rgb(14,168,231);
 }
 ul#mainmenu > li > a:link {
 	font-size: 1.17em;
@@ -252,7 +252,7 @@ ul#mainmenu > li ul {
 	display: none;
 	list-style: none;
 	position: absolute;
-	left: -4px;
+	left: 0;
 	top: 28px;
 	margin: -1px 0 0 0;
 	z-index: 998;
