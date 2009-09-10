@@ -458,6 +458,7 @@ $(document).ready( function() {
 		
 			var pane = $('> .scroll-pane', this);
 			var content = $('> .scroll-pane .scroll-content', this);
+			alert("pane:" + pane.height() + "px | content: " + content.height() + "px");
 		
 			if (pane.height() < content.height()) {
 				$('> .scroll-buttons .scroll-down', this).mousedown( function() {
