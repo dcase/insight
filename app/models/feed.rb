@@ -42,7 +42,7 @@ class Feed < ActiveRecord::Base
   def self.update_all_feeds
     Feed.all.each do |f|
       feed = Feedzirra::Feed.fetch_and_parse(f.feed_url)
-      if feed.responds_to?('entries')
+      unless defined?(feed.entries)
         f.add_entries(feed.entries, f.id) unless feed.entries.blank?
       end
     end
