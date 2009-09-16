@@ -297,6 +297,24 @@ ul#mainmenu li ul a:active {
 	color: #515151;
 	background-color: #c5eeff;
 }
+ul#mainmenu li ul a.current:link,
+ul#mainmenu li ul a.current:visited,
+ul#mainmenu li ul a.current:hover,
+ul#mainmenu li ul a.current:active {
+	display: block;
+	width: 101px;
+	padding: 4px 4px 4px 15px;
+	border-bottom: 1px solid white;
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 0;
+	text-decoration: none;
+	font-size: 0.93em;
+	font-weight: normal;
+	color: rgb(14,168,231);
+	background-color: #c5eeff;
+}
+
 
 ul#mainmenu li ul li a.first {
 	border-top: 1px solid white;
