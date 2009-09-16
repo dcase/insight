@@ -86,7 +86,8 @@ div#navigation {
 	bottom: 6px;
 	right: 0;
 	z-index: 998;
-	height: 24px
+	height: 24px;
+	text-align: right;
 }
 div#content {
 	border: 1px solid #aeaeae;
@@ -215,6 +216,7 @@ ul#mainmenu {
 	height: 24px;
 	position: static;
 	z-index: 998;
+	text-align: left;
 }
 ul#mainmenu li {
 	float: left;
