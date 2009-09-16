@@ -682,6 +682,9 @@ ul.blog_posts li {
 	font-weight: bold;
 	color: rgb(14,168,231);
 }
+#blog_archive_menu li ul.months {
+	margin-left: 0;
+}
 #blog_archive_menu li ul.months li a {
 	text-decoration: none;
 	font-weight: normal;
