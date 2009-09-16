@@ -207,6 +207,7 @@ a.current:active {
 /*****************
 * Main Menu
 ******************/
+
 ul#mainmenu {
 	list-style: none;
 	padding: 0;
@@ -215,55 +216,55 @@ ul#mainmenu {
 	position: static;
 	z-index: 998;
 }
-ul#mainmenu > li {
+ul#mainmenu li {
 	float: left;
 	position: relative;
 	z-index: 998;
 }
-ul#mainmenu > li.first > a {
+ul#mainmenu li.first a {
 	border-left: 0;
 }
-ul#mainmenu > li > a {
+ul#mainmenu li a {
 	display: block;
 	padding: 4px 8px;
 	border-left: 2px solid rgb(14,168,231);
 }
-ul#mainmenu > li > a:link {
+ul#mainmenu li a:link {
 	font-size: 1.17em;
 	color: #515151;
 	text-decoration: none;
 }
-ul#mainmenu > li > a:visited {
+ul#mainmenu li a:visited {
 	font-size: 1.17em;
 	color: #515151;
 	text-decoration: none;
 }
-ul#mainmenu > li > a:hover {
+ul#mainmenu li a:hover {
 	font-size: 1.17em;
 	color: rgb(14,168,231);
 	text-decoration: none;
 }
-ul#mainmenu > li > a:active {
+ul#mainmenu li a:active {
 	font-size: 1.17em;
 	color: #515151;
 	text-decoration: none;
 }
-ul#mainmenu > li > a.current:link {
+ul#mainmenu li a.current:link {
 	font-weight: bold;
 }
-ul#mainmenu > li > a.current:visited {
+ul#mainmenu li a.current:visited {
 	font-weight: bold;
 }
-ul#mainmenu > li > a.current:hover {
+ul#mainmenu li a.current:hover {
 	font-weight: bold;
 	color: #515151;
 }
-ul#mainmenu > li > a.current:active {
+ul#mainmenu li a.current:active {
 	font-weight: bold;
 }
 
 /** Dropdowns **/
-ul#mainmenu > li ul {
+ul#mainmenu li ul {
 	display: none;
 	list-style: none;
 	position: absolute;
@@ -273,35 +274,47 @@ ul#mainmenu > li ul {
 	z-index: 998;
 	padding: 0;
 }
-ul#mainmenu > li ul li {
+ul#mainmenu li ul li {
 	position: static;
 	z-index: 998;
+	float: none;
 }
 
-ul#mainmenu > li ul a {
+ul#mainmenu li ul a:link,
+ul#mainmenu li ul a:visited,
+ul#mainmenu li ul a:hover,
+ul#mainmenu li ul a:active {
 	display: block;
 	width: 101px;
 	padding: 4px 4px 4px 15px;
 	border-bottom: 1px solid white;
 	border-right: 1px solid white;
 	border-left: 1px solid white;
+	border-top: 0;
 	text-decoration: none;
 	font-size: 0.93em;
 	color: #515151;
 	background-color: #c5eeff;
 }
 
-ul#mainmenu > li ul li a.first {
+ul#mainmenu li ul li a.first {
 	border-top: 1px solid white;
 }
 
-ul#mainmenu > li ul .child-hover {
+ul#mainmenu li ul a.child-hover {
 	color: rgb(14,168,231);
 }
 
-ul#mainmenu > li ul li ul {
+ul#mainmenu li ul li ul {
 	margin: -29px 0 0 122px;
 	position: absolute;
+}
+ul#mainmenu div.menu_item_admin_controls a:link,
+ul#mainmenu div.menu_item_admin_controls a:visited,
+ul#mainmenu div.menu_item_admin_controls a:hover,
+ul#mainmenu div.menu_item_admin_controls a:active {
+	border: 0;
+	padding: 0;
 }
 
 /*****************
@@ -312,33 +325,39 @@ ul#pagemenu {
 	margin: 0;
 	padding: 0;
 }
-ul#pagemenu > li {
+ul#pagemenu li {
 	margin-bottom: 5px;
 }
-ul#pagemenu > li > a {
+ul#pagemenu li  a {
 	font-family: MyriadPro;
 	font-size: 1.5em;
 	color: #666;
 	text-decoration: none;
 }
-ul#pagemenu > li > a.current {
+ul#pagemenu li a.current {
 	font-size: 1.5em;
 	color: rgb(14,168,231);
 	text-decoration: none;
 }
-ul#pagemenu > li ul {
+ul#pagemenu li ul {
 	list-style: none;
 	margin-top: 5px;
-	padding-left: ;
 }
-ul#pagemenu > li ul a {
+ul#pagemenu li ul li {
+	margin: 0;
+}
+ul#pagemenu li ul a {
+	font-size: 1em;
+	font-family: helvetica, arial, sans-serif;
 	text-decoration: none;
 	color: #666;
 }
-ul#pagemenu > li ul a:hover {
+ul#pagemenu li ul a:hover {
 	color: rgb(14,168,231);
 }
-ul#pagemenu > li ul a.current {
+ul#pagemenu li ul a.current {
+	font-size: 1em;
+	font-family: helvetica, arial, sans-serif;
 	color: rgb(14,168,231);
 }
 
@@ -639,9 +658,19 @@ ul.blog_posts li {
 #blog_archive_menu li ul.months li {
 	padding: 0;
 }
-#blog_archive_menu > li > a {
+#blog_archive_menu li a {
 	text-decoration: underline;
 	font-weight: bold;
+	color: rgb(14,168,231);
+}
+#blog_archive_menu li ul.months li a {
+	text-decoration: none;
+	font-weight: normal;
+	color: #999;
+}
+#blog_archive_menu li ul.months li a.current {
+	text-decoration: none;
+	font-weight: normal;
 	color: rgb(14,168,231);
 }
 /*****************
