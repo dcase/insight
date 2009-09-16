@@ -617,6 +617,7 @@ ul.feed li a {
 	background: transparent;
 	font-size: 30px;
 	margin-bottom: 25px;
+	text-indent: 0;
 }
 #block_50 ul.feed li,
 #block_49 ul.feed li {
@@ -715,6 +716,7 @@ ul.blog_posts li {
 	margin: 0;
 	padding: 0;
 	background: transparent;
+	text-indent: 0;
 }
 .alumni-profile-info h5 {
 	margin: 20px 0 0 0;
