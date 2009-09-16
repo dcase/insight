@@ -3,6 +3,10 @@ img,
 .block h4 {
 	behavior: url(/javascripts/iepngfix.htc);
 }
+.block h4 div {
+	position: relative;
+	left: -13px;
+}
 div#content {
 	min-height: 350px;
 	height: auto !important;
