@@ -3,11 +3,8 @@ img,
 .block h4 {
 	behavior: url(/javascripts/iepngfix.htc);
 }
-.block h4 {
-	text-indent: 0;
-}
-.block h4 span.cufon {
-	padding-left: 13px;
+.block h4 div {
+	left: -13px !important;
 }
 div#content {
 	min-height: 350px;
