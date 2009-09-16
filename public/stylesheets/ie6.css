@@ -7,16 +7,16 @@ img,
 	left: -13px !important;
 }
 div#content {
-	min-height: 350px;
+	min-height: 430px;
 	height: auto !important;
-	height: 350px;
+	height: 430px;
 }
 .clearfix {
   height: 1%;
   overflow: visible;
 }
 div.content, div.block {
-	border: 2px solid white;
+	border: 0;
 }
 .scroll-content div {
 	position: static;
