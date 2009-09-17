@@ -540,8 +540,9 @@ $(document).ready( function() {
 	$("#new_user_session input[type=text]:first").focus();
 	
 	// Quote List
-	$(".quote_list > li").livequery("click", function(event) {
+	$(".quote_list > li > a").livequery("click", function(event) {
 		$("#quote_display").html($(".quote_display", this).html());
+		event.preventDefault()l
 	});
 
 
