@@ -541,7 +541,7 @@ $(document).ready( function() {
 	
 	// Quote List
 	$(".quote_list > li > a").livequery("click", function(event) {
-		$("#quote_display").html($(".quote_display", this).html());
+		$("#quote_display").html($(".quote_display", this.parent()).html());
 		event.preventDefault();
 	});
 
