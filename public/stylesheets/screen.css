@@ -561,6 +561,7 @@ div#search_form input#search {
 }
 .root_section_2 .quote_list a:hover {
 	text-decoration: none;
+	color: rgb(14,168,231);
 }
 .root_section_2 .quote_list a:active {
 	text-decoration: none;
