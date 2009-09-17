@@ -460,6 +460,7 @@ div#search_form input#search {
 .block_1 h4 {
 	background: transparent;
 	padding: 0;
+	text-indent: 0;
 }
 .section_1 .heading {
 	font-size: 59px;
@@ -637,7 +638,7 @@ ul.feed li a {
 }
 div#blog_title img#blog_rss_link {
 	position: relative;
-	top: -12px;
+	bottom: 3px;
 	margin-left: 0;
 }
 ul.blog_posts {
