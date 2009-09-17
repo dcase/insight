@@ -551,6 +551,21 @@ div#search_form input#search {
 	list-style-position: inside;
 	padding: 0;
 }
+.root_section_2 .quote_list a:link {
+	text-decoration: none;
+	color: #666;
+}
+.root_section_2 .quote_list a:visited {
+	text-decoration: none;
+	color: #666;
+}
+.root_section_2 .quote_list a:hover {
+	text-decoration: none;
+}
+.root_section_2 .quote_list a:active {
+	text-decoration: none;
+	color: #666;
+}
 
 /*****************
 * Services
