@@ -543,7 +543,8 @@ $(document).ready( function() {
 	$(".quote_list > li").livequery("click", function(event) {
 		$("#quote_display").html($(".quote_display", this).html());
 	});
-	
+
+
 	/******************************
 	*******************************
 	*****   CUSTOM SECTION   ******
