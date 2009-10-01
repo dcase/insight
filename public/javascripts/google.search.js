@@ -72,7 +72,7 @@ function searchComplete() {
 			
 			var link = document.createElement('a');
 			link.href = result.unescapedUrl;
-			link.target = "_blank";
+			// link.target = "_blank";
 			
       // We use titleNoFormatting so that no HTML tags are left in the title
       link.innerHTML = result.titleNoFormatting;
