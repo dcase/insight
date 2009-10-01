@@ -115,8 +115,8 @@ function OnLoad() {
   webSearch = new google.search.WebSearch();
 	webSearch.setResultSetSize(google.search.Search.LARGE_RESULTSET);
 
-  // Restrict to extra large images only
-  // webSearch.setSiteRestriction("insight.commandc.com");
+  // Restrict to this site
+  webSearch.setSiteRestriction("insight.commandc.com");
 
   // Here we set a callback so that anytime a search is executed, it will call
   // the searchComplete function and pass it our ImageSearch searcher.
