@@ -66,7 +66,8 @@ class Feed < ActiveRecord::Base
   
   def remove_old_entries(feed_id)
     feed = Feed.find(feed_id)
-    feed.feed_entries.destroy_all(:conditions => ["published_at < ?", 1.month.ago.to_s(:db)])
+    removables = feed.feed_entries.all(:conditions => ["published_at < ?", 1.month.ago.to_s(:db)])
+    removables.each{|r| r.delete }
   end
   
   private
