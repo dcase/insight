@@ -623,8 +623,7 @@ div#search_form input#search {
 }
 ul.feed {
 	padding-left: 10px;
-	list-style-position: inside;
-	margin-left: 0;
+	margin-left: 15px;
 }
 ul.feed li {
 	margin-bottom: 20px;

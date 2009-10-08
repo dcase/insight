@@ -116,7 +116,7 @@ function OnLoad() {
 	webSearch.setResultSetSize(google.search.Search.LARGE_RESULTSET);
 
   // Restrict to this site
-  webSearch.setSiteRestriction("insight.commandc.com");
+  // webSearch.setSiteRestriction("insight.commandc.com");
 
   // Here we set a callback so that anytime a search is executed, it will call
   // the searchComplete function and pass it our ImageSearch searcher.
