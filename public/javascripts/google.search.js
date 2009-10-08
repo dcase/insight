@@ -100,6 +100,7 @@ function searchComplete() {
 	var closeDiv = document.createElement('div');
 	var closeLink = document.createElement('a');
 	closeLink.setAttribute("id","close_search_results");
+	closeLink.setAttribute("href","javascript: void(0);");
 	closeLink.innerHTML = "[X] close";
 	closeDiv.appendChild(closeLink);
 	contentDiv.appendChild(closeDiv);
