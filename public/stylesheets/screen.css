@@ -567,7 +567,9 @@ div#search_form input#search {
 	text-decoration: none;
 	color: #666;
 }
-
+#block_5 .ui-tabs .ui-tabs-nav {
+	height: 35px;
+}
 /*****************
 * Services
 ******************/
