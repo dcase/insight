@@ -40,7 +40,7 @@ $(document).ready( function() {
 	
 	// Check for IE6 and recommend upgrade
 	if ($.browser.msie && $.browser.version < 7) {
-		alert("This site will not display correctly in your browser. Please upgrade or switch to a newer browser and visit us again. We apologize for the inconvenience. (Current browser: Microsoft Internet Explorer " + $.browser.version + ")");
+		alert("This site may not display or function correctly in your browser. Please upgrade or switch to a newer browser and visit us again. We apologize for the inconvenience. (Current browser: Microsoft Internet Explorer " + $.browser.version + ")");
 	}
 	
 	// Show admin controls on menu item hover
