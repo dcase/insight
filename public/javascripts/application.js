@@ -466,14 +466,14 @@ $(document).ready( function() {
 		
 			if (pane.height() < content.height()) {
 				$('> .scroll-buttons .scroll-down', this).mousedown( function() {
-						$(this).parent().siblings('.scroll-pane').scrollTo('max', "slow", {easing: 'linear'});
+						$(this).parent().siblings('.scroll-pane').scrollTo('max', "slow", {easing: 'linear', axis: "y"});
 					}).mouseup( function() {
 						$(this).parent().siblings('.scroll-pane').stop();
 					}
 				);
 
 				$('> .scroll-buttons .scroll-up', this).mousedown( function() {
-						$(this).parent().siblings('.scroll-pane').scrollTo(0, "slow", {easing: 'linear'});
+						$(this).parent().siblings('.scroll-pane').scrollTo(0, "slow", {easing: 'linear', axis: "y"});
 					}).mouseup( function() {
 						$(this).parent().siblings('.scroll-pane').stop();
 					}
