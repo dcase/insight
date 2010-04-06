@@ -1,4 +1,6 @@
 class BlogsController < ApplicationController
+  before_filter :permission, :except => :show
+  
   # GET /blogs
   # GET /blogs.xml
   def index
