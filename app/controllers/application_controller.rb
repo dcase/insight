@@ -48,7 +48,7 @@ class ApplicationController < ActionController::Base
   
   def permission
     unless authorized?
-      flash[:notice] = "You don't look like an admin to me"
+      flash[:notice] = "You do not have permission to access that page."
       session[:back_url] = request.referer || root_path
       redirect_to session[:back_url]
     end
@@ -56,7 +56,7 @@ class ApplicationController < ActionController::Base
   
   def admin_only
     unless authorized? and current_user.role == "admin"
-      flash[:notice] = "You don't look like an admin to me"
+      flash[:notice] = "You do not have permission to access that page."
       session[:back_url] = request.referer || root_path
       redirect_to session[:back_url]
     end

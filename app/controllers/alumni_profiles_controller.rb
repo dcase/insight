@@ -1,4 +1,6 @@
 class AlumniProfilesController < ApplicationController
+  before_filter :permission
+  
   # GET /alumni_profiles
   # GET /alumni_profiles.xml
   def index
