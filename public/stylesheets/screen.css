@@ -663,7 +663,7 @@ div#blog_title img#blog_rss_link {
 }
 ul.blog_posts {
 	padding: 0;
-	list-style-position: inside;
+	/*list-style-position: inside;*/
 	margin-left: 0;
 }
 ul.blog_posts li {
